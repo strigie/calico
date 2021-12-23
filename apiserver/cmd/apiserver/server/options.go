@@ -110,8 +110,8 @@ func (o *CalicoServerOptions) Config() (*apiserver.Config, error) {
 		return nil, err
 	}
 
-  // allowedCiphers returns the set of allowed cipher suites for the server.
-  // The list is taken from https://github.com/golang/go/blob/dev.boringcrypto.go1.13/src/crypto/tls/boring.go#L54
+	// allowedCiphers returns the set of allowed cipher suites for the server.
+	// The list is taken from https://github.com/golang/go/blob/dev.boringcrypto.go1.13/src/crypto/tls/boring.go#L54
 	cipherSuites := []uint16{
 		tls.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,
 		tls.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,
